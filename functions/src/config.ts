@@ -12,6 +12,7 @@ db.settings(settings);
 
 // ENV variables
 export const stripeSecret = functions.config().stripe.secret;
+export const webhookSecret = functions.config().stripe.webhook;
 
 // Export stripe
 export const stripe = new Stripe(stripeSecret);
